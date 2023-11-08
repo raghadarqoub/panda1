@@ -1,0 +1,170 @@
+/* font-family: 'Quicksand', sans-serif; 
+font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#F51843;
+    --color-main:#291E97;
+    --color:#0C0833;
+    --color-Color:#8F6DFF;
+}
+body{
+    background-color: #F9FAFF;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F9FAFF;
+}
+.navbar .nav-link {
+    padding-block:5px;
+    position: relative;
+}
+.navbar .nav-link::after{
+    content: ' ';
+    transition: 0.5s width;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color:var(--color);
+} 
+.navbar .nav-link.active::after{
+    width: 100%;
+}
+.navbar .nav-link:hover::after{
+    width: 100%;
+    background-color: var(--color);
+}
+.header{
+    height: 800px;
+    padding-top: 120px;
+    margin-bottom: 70px;
+}
+.bg-color{
+    background-color: var(--color);
+}
+.bg-main-color{
+    background-color: var(--main-color);
+}
+.bg-color-main{
+    background-color: var(--color-main);
+}
+.bg-color-Color{
+    background-color: var(--color-Color);
+}
+.text-dark-blue{
+    color:#080337;
+}
+.text-main-color{
+    color: var(--main-color);
+}
+.navbar .nav-link{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    color: rgb(8, 3, 55);
+}
+.navbar .button_title{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.8px;
+    color: rgb(233, 233, 233);
+}
+.navbar span{
+    color: white !important;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: Quicksand, sans-serif;
+    font-size: 56.984px;
+    font-weight: 700;
+    line-height: 56.984px;
+    color: rgb(8, 3, 55) ;
+}
+.header{
+    height:28%;
+}
+.marketing h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight : 700;
+    line-height : 29.136px;
+    color: rgb(8, 3, 55); 
+}
+.card {
+    background-color: #F9FAFF;
+}
+.date{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight :  400;
+    line-height : 21px;
+    color: #A0A4B4;
+}
+.date:hover{
+    color: rgb(8, 3, 55);
+    transition:0.2s ;
+    -webkit-transition:0.2s ;
+    -moz-transition:0.2s ;
+    -ms-transition:0.2s ;
+    -o-transition:0.2s ;
+}
+.point{
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight :  400;
+    line-height : 21px;
+    color: #A0A4B4;
+    
+}
+.marcet{
+    font-family: 'Quicksand', sans-serif;
+    font-size:13px;
+    font-weight : 700;
+    line-height :  21px;
+    color: var(--color);
+}
+.marcet:hover{
+    color:rgb(255, 46, 87);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.card-img-top{
+    overflow: hidden;
+    max-width: 300px;
+    max-height: 300px;
+    border: 0px dotted;
+}
+img{
+    transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
